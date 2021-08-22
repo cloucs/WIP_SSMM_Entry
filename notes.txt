@@ -6,3 +6,8 @@ sk8 or die
 
 START:
 ARE YOU DA SKATER OR DA BLADEEER FOR TODAY???
+
+TODO:
+obstacle spawn boxes
+shooting mechanic
+infinite track
