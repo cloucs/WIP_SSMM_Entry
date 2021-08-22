@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class C_CamController : MonoBehaviour
 {
-    [SerializeField]
-    public C_PlayerController playerController;
-    new public Rigidbody rigidbody;
+    public GameObject cam;
+    public Vector3 camPosition;
+    public Transform playerPosition;
+    private Vector3 playerVec;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
@@ -22,8 +23,11 @@ public class C_CamController : MonoBehaviour
 
     private void Movement()
     {
-        float verticalMovement = Input.GetAxis("Vertical");
-        Vector3 velocity = new Vector3(0, 0, verticalMovement *= playerController.xVeSpeed);
-        rigidbody.velocity = velocity;
+        /*
+        Vector3 temp = new Vector3(7.0f,0,0);
+        myGameObject.transform.position += temp;
+        */
+        playerVec.z = playerPosition.position.z;
+        transform.position = playerVec + camPosition;
     }
 }

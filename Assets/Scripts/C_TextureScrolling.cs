@@ -25,9 +25,6 @@ public class C_TextureScrolling : MonoBehaviour
         float offsetX = Time.time * scrollX;
         float offsetY = Time.time * scrollY;
 
-        Debug.Log("offsetX: " + offsetX);
-        Debug.Log("offsetY: " + offsetY);
-
         meshRenderer.material.mainTextureOffset = new Vector2(offsetX, offsetY);
     }
 }
