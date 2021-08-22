@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class C_CamController : MonoBehaviour
 {
-    public GameObject cam;
     public Vector3 camPosition;
     public Transform playerPosition;
     private Vector3 playerVec;
