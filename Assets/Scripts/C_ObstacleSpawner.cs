@@ -41,8 +41,9 @@ public class C_ObstacleSpawner : MonoBehaviour
         targetTime -= Time.deltaTime;
         if (targetTime <= 0.0f)
         {
-            Instantiate(obstacles[randObstacle], randSpawnPosition, Quaternion.identity);
-            targetTime = 1.0f;
+            GameObject clone = Instantiate(obstacles[randObstacle], randSpawnPosition, Quaternion.identity);
+            Destroy(clone, 30.0f);
+            targetTime = 0.3f;
         }
     }
 }

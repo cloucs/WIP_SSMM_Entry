@@ -133,4 +133,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 8241179171818543548}
   animator: {fileID: 1270740485322835675}
-  speed: 3
+  meshRenderer: {fileID: 3716445464986361120}
+  mat0: {fileID: 2100000, guid: 8cdb2b6e427b22a41a075e24c966190c, type: 2}
+  matL: {fileID: 2100000, guid: 4bca59286c6e067479bdcd652f7681fb, type: 2}
+  matR: {fileID: 2100000, guid: 806227247daa87a46946191116b7c37f, type: 2}
+  xHzSpeed: 3
+  xVeSpeed: 3
+  xJumpForce: 3
+  thrust: 1000
